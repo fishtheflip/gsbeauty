@@ -1,0 +1,86 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page19192292.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^glavnaya$ page13626861.html [NC]
+RewriteRule ^glavnaya/$ page13626861.html [NC]
+
+RewriteRule ^sps$ page13634670.html [NC]
+RewriteRule ^sps/$ page13634670.html [NC]
+
+RewriteRule ^1$ page13649660.html [NC]
+RewriteRule ^1/$ page13649660.html [NC]
+
+RewriteRule ^target1$ page15253036.html [NC]
+RewriteRule ^target1/$ page15253036.html [NC]
+
+RewriteRule ^target2$ page15307230.html [NC]
+RewriteRule ^target2/$ page15307230.html [NC]
+
+RewriteRule ^target3$ page15539154.html [NC]
+RewriteRule ^target3/$ page15539154.html [NC]
+
+RewriteRule ^finiko$ page15826516.html [NC]
+RewriteRule ^finiko/$ page15826516.html [NC]
+
+RewriteRule ^finikoauto$ page15880081.html [NC]
+RewriteRule ^finikoauto/$ page15880081.html [NC]
+
+RewriteRule ^targetspa$ page16365172.html [NC]
+RewriteRule ^targetspa/$ page16365172.html [NC]
+
+RewriteRule ^pregnant$ page16365187.html [NC]
+RewriteRule ^pregnant/$ page16365187.html [NC]
+
+RewriteRule ^vanna$ page16632129.html [NC]
+RewriteRule ^vanna/$ page16632129.html [NC]
+
+RewriteRule ^china$ page16677134.html [NC]
+RewriteRule ^china/$ page16677134.html [NC]
+
+RewriteRule ^paris$ page16677177.html [NC]
+RewriteRule ^paris/$ page16677177.html [NC]
+
+RewriteRule ^brazil$ page16786912.html [NC]
+RewriteRule ^brazil/$ page16786912.html [NC]
+
+RewriteRule ^india$ page16786961.html [NC]
+RewriteRule ^india/$ page16786961.html [NC]
+
+RewriteRule ^relaxman$ page17346599.html [NC]
+RewriteRule ^relaxman/$ page17346599.html [NC]
+
+RewriteRule ^pregnant12345$ page17817669.html [NC]
+RewriteRule ^pregnant12345/$ page17817669.html [NC]
+
+RewriteRule ^relax$ page17817727.html [NC]
+RewriteRule ^relax/$ page17817727.html [NC]
+
+RewriteRule ^allinclusive$ page18140257.html [NC]
+RewriteRule ^allinclusive/$ page18140257.html [NC]
+
+RewriteRule ^hair$ page18140282.html [NC]
+RewriteRule ^hair/$ page18140282.html [NC]
+
+RewriteRule ^checklist$ page19192292.html [NC]
+RewriteRule ^checklist/$ page19192292.html [NC]
+
+RewriteRule ^zhivot$ page24567526.html [NC]
+RewriteRule ^zhivot/$ page24567526.html [NC]
+
+RewriteRule ^vsesrazu$ page24567541.html [NC]
+RewriteRule ^vsesrazu/$ page24567541.html [NC]
+
+RewriteRule ^members/ ma_start.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3633-3831-4639-b865-303163623731/favicon.ico [R=302,L]
+
